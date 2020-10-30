@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>模块和包 | nanarino note</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <meta name="description" content="super best match, are you ready">
+    
+    <link rel="preload" href="/markdown-note/assets/css/0.styles.500b7fdf.css" as="style"><link rel="preload" href="/markdown-note/assets/js/app.6ad9ad44.js" as="script"><link rel="preload" href="/markdown-note/assets/js/8.ae913670.js" as="script"><link rel="preload" href="/markdown-note/assets/js/1.5bc6bece.js" as="script"><link rel="preload" href="/markdown-note/assets/js/62.d9c80f51.js" as="script"><link rel="prefetch" href="/markdown-note/assets/js/10.5e947330.js"><link rel="prefetch" href="/markdown-note/assets/js/11.301d9dda.js"><link rel="prefetch" href="/markdown-note/assets/js/12.e4b6419c.js"><link rel="prefetch" href="/markdown-note/assets/js/13.84c13ead.js"><link rel="prefetch" href="/markdown-note/assets/js/14.da0e09d6.js"><link rel="prefetch" href="/markdown-note/assets/js/15.d6fb46c8.js"><link rel="prefetch" href="/markdown-note/assets/js/16.f9ff9ab3.js"><link rel="prefetch" href="/markdown-note/assets/js/17.8259891a.js"><link rel="prefetch" href="/markdown-note/assets/js/18.087a4d0c.js"><link rel="prefetch" href="/markdown-note/assets/js/19.c8528fa5.js"><link rel="prefetch" href="/markdown-note/assets/js/20.8863a63e.js"><link rel="prefetch" href="/markdown-note/assets/js/21.8847dc3b.js"><link rel="prefetch" href="/markdown-note/assets/js/22.16fec1c1.js"><link rel="prefetch" href="/markdown-note/assets/js/23.d9e3924f.js"><link rel="prefetch" href="/markdown-note/assets/js/24.bde81be3.js"><link rel="prefetch" href="/markdown-note/assets/js/25.1883a82a.js"><link rel="prefetch" href="/markdown-note/assets/js/26.f2f2bbf0.js"><link rel="prefetch" href="/markdown-note/assets/js/27.c7cda20f.js"><link rel="prefetch" href="/markdown-note/assets/js/28.4e9627bc.js"><link rel="prefetch" href="/markdown-note/assets/js/29.c9afe55b.js"><link rel="prefetch" href="/markdown-note/assets/js/3.8040a9db.js"><link rel="prefetch" href="/markdown-note/assets/js/30.18a85a01.js"><link rel="prefetch" href="/markdown-note/assets/js/31.72c949fb.js"><link rel="prefetch" href="/markdown-note/assets/js/32.8a0cbbed.js"><link rel="prefetch" href="/markdown-note/assets/js/33.376710bc.js"><link rel="prefetch" href="/markdown-note/assets/js/34.af108730.js"><link rel="prefetch" href="/markdown-note/assets/js/35.eb43e941.js"><link rel="prefetch" href="/markdown-note/assets/js/36.0396717d.js"><link rel="prefetch" href="/markdown-note/assets/js/37.876cb87f.js"><link rel="prefetch" href="/markdown-note/assets/js/38.01f154cf.js"><link rel="prefetch" href="/markdown-note/assets/js/39.a8244dc6.js"><link rel="prefetch" href="/markdown-note/assets/js/4.98f50ccd.js"><link rel="prefetch" href="/markdown-note/assets/js/40.f41e8fc7.js"><link rel="prefetch" href="/markdown-note/assets/js/41.6a2cc3d7.js"><link rel="prefetch" href="/markdown-note/assets/js/42.0eaa973a.js"><link rel="prefetch" href="/markdown-note/assets/js/43.2907499f.js"><link rel="prefetch" href="/markdown-note/assets/js/44.ac4d1231.js"><link rel="prefetch" href="/markdown-note/assets/js/45.19c4b441.js"><link rel="prefetch" href="/markdown-note/assets/js/46.dd0ce2d7.js"><link rel="prefetch" href="/markdown-note/assets/js/47.0ec6dcc4.js"><link rel="prefetch" href="/markdown-note/assets/js/48.b6a57045.js"><link rel="prefetch" href="/markdown-note/assets/js/49.aada9f7d.js"><link rel="prefetch" href="/markdown-note/assets/js/5.ecff997d.js"><link rel="prefetch" href="/markdown-note/assets/js/50.a00306d8.js"><link rel="prefetch" href="/markdown-note/assets/js/51.2467c72f.js"><link rel="prefetch" href="/markdown-note/assets/js/52.c705a611.js"><link rel="prefetch" href="/markdown-note/assets/js/53.1bc7535a.js"><link rel="prefetch" href="/markdown-note/assets/js/54.632ff400.js"><link rel="prefetch" href="/markdown-note/assets/js/55.992916e5.js"><link rel="prefetch" href="/markdown-note/assets/js/56.d576950f.js"><link rel="prefetch" href="/markdown-note/assets/js/57.e59e6f1f.js"><link rel="prefetch" href="/markdown-note/assets/js/58.8e659869.js"><link rel="prefetch" href="/markdown-note/assets/js/59.50330523.js"><link rel="prefetch" href="/markdown-note/assets/js/6.b1cd3e37.js"><link rel="prefetch" href="/markdown-note/assets/js/60.4639274d.js"><link rel="prefetch" href="/markdown-note/assets/js/61.6cdfff18.js"><link rel="prefetch" href="/markdown-note/assets/js/63.3e4901bd.js"><link rel="prefetch" href="/markdown-note/assets/js/64.a8ef9d4e.js"><link rel="prefetch" href="/markdown-note/assets/js/65.558af6af.js"><link rel="prefetch" href="/markdown-note/assets/js/66.a41b8b54.js"><link rel="prefetch" href="/markdown-note/assets/js/67.c5259626.js"><link rel="prefetch" href="/markdown-note/assets/js/68.2d151809.js"><link rel="prefetch" href="/markdown-note/assets/js/69.fc8451aa.js"><link rel="prefetch" href="/markdown-note/assets/js/7.f3f49ad4.js"><link rel="prefetch" href="/markdown-note/assets/js/70.4dcc9762.js"><link rel="prefetch" href="/markdown-note/assets/js/71.a0283465.js"><link rel="prefetch" href="/markdown-note/assets/js/72.0544692b.js"><link rel="prefetch" href="/markdown-note/assets/js/73.ee8ea4da.js"><link rel="prefetch" href="/markdown-note/assets/js/74.56a9b0ae.js"><link rel="prefetch" href="/markdown-note/assets/js/75.486b7d4f.js"><link rel="prefetch" href="/markdown-note/assets/js/76.73b2046c.js"><link rel="prefetch" href="/markdown-note/assets/js/77.c91b8cf2.js"><link rel="prefetch" href="/markdown-note/assets/js/78.627526b3.js"><link rel="prefetch" href="/markdown-note/assets/js/79.e76450e0.js"><link rel="prefetch" href="/markdown-note/assets/js/80.40749b69.js"><link rel="prefetch" href="/markdown-note/assets/js/81.f32e5545.js"><link rel="prefetch" href="/markdown-note/assets/js/82.3b3d5be0.js"><link rel="prefetch" href="/markdown-note/assets/js/83.3238f4e9.js"><link rel="prefetch" href="/markdown-note/assets/js/9.e196c9cf.js">
+    <link rel="stylesheet" href="/markdown-note/assets/css/0.styles.500b7fdf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/markdown-note/" class="home-link router-link-active"><!----> <span class="site-name">nanarino note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/markdown-note/js/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/markdown-note/py/" class="nav-link router-link-active">
+  Python
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="about" class="dropdown-title"><span class="title">about</span> <span class="arrow down"></span></button> <button type="button" aria-label="about" class="mobile-dropdown-title"><span class="title">about</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/nanarino" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://twitter.com/kogawananari" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Twitter
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/markdown-note/js/" class="nav-link">
+  JavaScript
+</a></div><div class="nav-item"><a href="/markdown-note/py/" class="nav-link router-link-active">
+  Python
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="about" class="dropdown-title"><span class="title">about</span> <span class="arrow down"></span></button> <button type="button" aria-label="about" class="mobile-dropdown-title"><span class="title">about</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/nanarino" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://twitter.com/kogawananari" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Twitter
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>起步</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据类型</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>函数</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>面向对象</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/markdown-note/py/16-类和对象.html" class="sidebar-link">类和对象</a></li><li><a href="/markdown-note/py/17-封装和继承.html" class="sidebar-link">封装和继承</a></li><li><a href="/markdown-note/py/18-魔术方法.html" class="sidebar-link">魔术方法</a></li><li><a href="/markdown-note/py/19-多态和泛型.html" class="sidebar-link">多态和泛型</a></li><li><a href="/markdown-note/py/20-模块和包.html" class="active sidebar-link">模块和包</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/markdown-note/py/20-模块和包.html#模块" class="sidebar-link">模块</a></li><li class="sidebar-sub-header"><a href="/markdown-note/py/20-模块和包.html#包" class="sidebar-link">包</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>常用模块</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>并发编程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>WEB相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>杂项模块</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="模块和包"><a href="#模块和包" class="header-anchor">#</a> 模块和包</h1> <blockquote><p>python的模块都是天然的单例</p></blockquote> <h2 id="模块"><a href="#模块" class="header-anchor">#</a> 模块</h2> <p>import加载的模块分为四个通用类别：</p> <ul><li>使用python编写的代码（.py文件）</li> <li>已被编译为共享库或DLL的C或C++扩展</li> <li>包好一组模块的包</li> <li>使用C编写并链接到python解释器的内置模块</li></ul> <p>我们可以从<code>sys.modules</code>中找到当前已经加载的模块，<br> <code>sys.modules</code>是一个字典，内部包含模块名与模块对象的映射，<br>
+该字典决定了导入模块时是否需要重新导入。</p> <h3 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h3> <p>自定义模块文件名<code>my_module.py</code>,模块名<code>my_module</code></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#my_module.py</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'from the my_module.py'</span><span class="token punctuation">)</span>
+
+money <span class="token operator">=</span> <span class="token number">1000</span>
+
+<span class="token keyword">def</span> <span class="token function">read1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'my_module-&gt;read1-&gt;money'</span><span class="token punctuation">,</span>money<span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">read2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'my_module-&gt;read2 calling read1'</span><span class="token punctuation">)</span>
+    read1<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">def</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">global</span> money
+    money<span class="token operator">=</span><span class="token number">0</span>
+</code></pre></div><p>每个模块都是一个独立的名称空间，定义在这个模块中的函数，把这个模块的名称空间当做全局名称空间，<br>
+这样我们在编写自己的模块时，就不用担心我们定义在自己模块中全局变量会在被导入时，与使用者的全局变量冲突<br>
+同时模块也是单例类，多次导入，'from the my_module.py'也只被print一次。</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#测试：执行my_module.change()操作的全局变量money仍然是my_module中的</span>
+<span class="token comment">#demo.py</span>
+
+<span class="token keyword">import</span> my_module
+
+money <span class="token operator">=</span> <span class="token number">1</span>
+my_module<span class="token punctuation">.</span>change<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># 改变的是my_module.money</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>money<span class="token punctuation">)</span>
+<span class="token triple-quoted-string string">'''
+执行结果：
+from the my_module.py
+1
+'''</span>
+</code></pre></div><h3 id="在一行导入多个模块"><a href="#在一行导入多个模块" class="header-anchor">#</a> 在一行导入多个模块</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> sys<span class="token punctuation">,</span> os<span class="token punctuation">,</span> re
+</code></pre></div><h3 id="别名"><a href="#别名" class="header-anchor">#</a> 别名</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> my_module <span class="token keyword">as</span> sm
+</code></pre></div><h3 id="from-import"><a href="#from-import" class="header-anchor">#</a> from ... import...</h3> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> my_module <span class="token keyword">import</span> read1<span class="token punctuation">,</span> read2
+
+my_module<span class="token punctuation">.</span>read1<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">#可用</span>
+read1<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">#可用</span>
+</code></pre></div><p>如果当前命名空间有重名read1或者read2，那么会有覆盖效果。</p> <h4 id="导入多行"><a href="#导入多行" class="header-anchor">#</a> 导入多行</h4> <div class="language-python extra-class"><pre class="language-python"><code> <span class="token keyword">from</span> my_module <span class="token keyword">import</span> <span class="token punctuation">(</span>read1<span class="token punctuation">,</span>
+                   read2<span class="token punctuation">,</span>
+                   money<span class="token punctuation">)</span>
+</code></pre></div><h4 id="别名-2"><a href="#别名-2" class="header-anchor">#</a> 别名</h4> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> my_module <span class="token keyword">import</span> read1 <span class="token keyword">as</span> read
+</code></pre></div><h4 id="全部导入"><a href="#全部导入" class="header-anchor">#</a> 全部导入</h4> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">from</span> my_module <span class="token keyword">import</span> <span class="token operator">*</span> <span class="token comment">#将模块my_module中所有的名字都导入到当前名称空间</span>
+</code></pre></div><p>此时需要在在<code>my_module.py</code>中新增一行</p> <div class="language-python extra-class"><pre class="language-python"><code>__all__ <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'money'</span><span class="token punctuation">,</span><span class="token string">'read1'</span><span class="token punctuation">]</span>
+</code></pre></div><p>这样在另外一个文件中用<code>from my_module import *</code>就这能导入列表中规定的两个名字</p> <h3 id="模块的加载与修改"><a href="#模块的加载与修改" class="header-anchor">#</a> 模块的加载与修改</h3> <p>每个模块相当于单例类，导入一次立被实例化，放入字典<code>sys.modules</code>中了。<br>
+python不支持重新加载或卸载之前导入的模块<br>
+如果只是你想交互测试的一个模块，使用<code>importlib.reload(modulename)</code>，<br>
+而且这只能用于测试环境。</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#aa.py</span>
+<span class="token keyword">def</span> <span class="token function">func1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'func1'</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> time<span class="token punctuation">,</span> importlib
+<span class="token keyword">import</span> aa
+ 
+time<span class="token punctuation">.</span>sleep<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token comment"># importlib.reload(aa)</span>
+aa<span class="token punctuation">.</span>func1<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>在20秒的等待时间里，修改aa.py中func1的内容，等待test.py的结果。<br>
+打开importlib注释，重新测试</p> <h3 id="把模块当做脚本执行"><a href="#把模块当做脚本执行" class="header-anchor">#</a> 把模块当做脚本执行</h3> <p>我们可以通过模块的全局变量<code>__name__</code>来查看模块名：<br>
+当做脚本运行：<br> <code>__name__</code>等于<code>'__main__'</code><br>
+当做模块导入：<br> <code>__name__</code>= 模块名<br>
+作用：用来控制.py文件在不同的应用场景下执行不同的逻辑</p> <p><code>if __name__ == '__main__':</code></p> <h3 id="模块搜索路径"><a href="#模块搜索路径" class="header-anchor">#</a> 模块搜索路径</h3> <p>python解释器在启动时会自动加载一些模块，可以使用<code>sys.modules</code>查看<br>
+模块的查找顺序是：内存中已经加载的模块-&gt;内置模块-&gt;sys.path路径中包含的模块<br>
+在初始化后，python程序可以修改<code>sys.path</code>,路径放到前面的优先于标准库被加载</p> <h3 id="编译python文件"><a href="#编译python文件" class="header-anchor">#</a> 编译python文件</h3> <p>为了提高加载模块的速度，强调强调强调：提高的是加载速度而绝非运行速度。<br>
+python解释器会在<code>__pycache__</code>目录中下缓存每个模块编译后的版本，<br>
+格式为：module.version.pyc。<br>
+通常会包含python的版本号。</p> <p>例如，在CPython3.3版本下，<br> <code>my_module.py</code>模块会被缓存成<code>__pycache__/my_module.cpython-33.pyc</code>。<br>
+这种命名规范保证了编译后的结果多版本共存。</p> <h3 id="dir-函数"><a href="#dir-函数" class="header-anchor">#</a> <code>dir()</code>函数</h3> <p>内置函数<code>dir()</code>可以用来查找模块中定义的名字，返回一个有序字符串列表</p> <h2 id="包"><a href="#包" class="header-anchor">#</a> 包</h2> <p>包是一种通过使用<code>.模块名</code>来组织python模块名称空间的方式。</p> <ul><li>无论是import形式还是from...import形式，凡是在导入语句中（而不是在使用时）遇到带点的，都是关于包独有的导入语法，如<code>from moviepy.editor import *</code></li> <li>包是目录级的（文件夹级），包的本质就是一个包含<code>__init__.py</code>文件的目录</li> <li><ul><li>import导入文件时，产生名称空间中的名字来源于文件，</li> <li>import 包时，产生的名称空间的名字同样来源于文件，即包下的<code>__init__.py</code>，导入包本质就是在导入该文件</li></ul></li></ul> <p><strong>强调：</strong></p> <p>1. 而在python2中，包下没有<code>__init__.py</code>文件，import包会报错
+　　2. 创建包的目的不是为了运行，而是被导入使用，记住，包只是模块的一种形式而已，包即模块</p> <h3 id="绝对导入和相对导入"><a href="#绝对导入和相对导入" class="header-anchor">#</a> 绝对导入和相对导入</h3> <h4 id="内部互调"><a href="#内部互调" class="header-anchor">#</a> 内部互调</h4> <p>我们的最顶级包glance是写给别人用的，(结构图见最下)<br>
+然后在glance包内部也会有彼此之间互相导入的需求，这时候就有绝对导入和相对导入两种方式：</p> <ul><li>绝对导入：以glance作为起始</li> <li>相对导入：用<code>.</code>或者<code>..</code>的方式为起始（只能在一个包中使用，不能用于不同目录内）</li></ul> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#绝对导入</span>
+<span class="token keyword">from</span> glance<span class="token punctuation">.</span>cmd <span class="token keyword">import</span> manage
+manage<span class="token punctuation">.</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">#相对导入</span>
+<span class="token keyword">from</span> <span class="token punctuation">.</span><span class="token punctuation">.</span>cmd <span class="token keyword">import</span> manage
+manage<span class="token punctuation">.</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>外部测试结果：注意一定要在于glance同级的文件中测试</p> <div class="language-python extra-class"><pre class="language-python"><code> <span class="token keyword">from</span> glance<span class="token punctuation">.</span>api <span class="token keyword">import</span> versions 
+</code></pre></div><div class="custom-block danger"><p class="custom-block-title">注意：</p> <p>在使用pycharm时，有的情况会为你多做一些事情<br>
+因而在测试时，一定要回到命令行去执行</p></div> <p><strong><code>__init__.py</code>决定的外部用例</strong></p> <p>单独导入包名称时，不会导入包中所有包含的所有子模块，<br>
+即不会自动导入同级所有目录和python文件(子模块)。<br>
+模块内方法的调用方式取决于各级的<code>__init__.py</code>文件。</p> <h4 id="默认的"><a href="#默认的" class="header-anchor">#</a> 默认的</h4> <p>很多第三方模块的各级<code>__init__.py</code>文件是如下书写的</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#glance/__init__.py</span>
+<span class="token keyword">from</span> <span class="token punctuation">.</span> <span class="token keyword">import</span> cmd
+
+<span class="token comment">#glance/cmd/__init__.py</span>
+<span class="token keyword">from</span> <span class="token punctuation">.</span> <span class="token keyword">import</span> manage
+</code></pre></div><p>此时外部可以这样调用：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">import</span> glance
+glance<span class="token punctuation">.</span>cmd<span class="token punctuation">.</span>manage<span class="token punctuation">.</span>main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h4 id="惯例的"><a href="#惯例的" class="header-anchor">#</a> 惯例的</h4> <p>也可以这样书写使无论什么方式都可以调用：</p> <div class="language-python extra-class"><pre class="language-python"><code>glance<span class="token operator">/</span>                   
+├── __init__<span class="token punctuation">.</span>py     <span class="token keyword">from</span> <span class="token punctuation">.</span>api <span class="token keyword">import</span> <span class="token operator">*</span>
+│                   __version__ <span class="token operator">=</span> <span class="token string">&quot;1.0.0&quot;</span>
+│                   __all__ <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'api'</span><span class="token punctuation">,</span><span class="token string">'cmd'</span><span class="token punctuation">,</span><span class="token string">'db'</span><span class="token punctuation">]</span>   
+├── api                  
+│   │
+│   ├── __init__<span class="token punctuation">.</span>py   __all__ <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'policy'</span><span class="token punctuation">,</span><span class="token string">'versions'</span><span class="token punctuation">]</span>
+│   │                <span class="token keyword">from</span> <span class="token punctuation">.</span>versions <span class="token keyword">import</span> <span class="token operator">*</span> 
+│   │
+│   ├── policy<span class="token punctuation">.</span>py
+│   │
+│   └── versions<span class="token punctuation">.</span>py  <span class="token keyword">def</span> <span class="token function">get_now_version</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+│                        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">)</span>
+│    
+├── cmd  
+│   │
+│   ├── __init__<span class="token punctuation">.</span>py	  __all__ <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'manage'</span><span class="token punctuation">]</span>
+│   │
+│   └── manage<span class="token punctuation">.</span>py    
+│   
+└── db           
+    │
+    ├── __init__<span class="token punctuation">.</span>py   __all__ <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'models'</span><span class="token punctuation">]</span>
+    │
+    └── models<span class="token punctuation">.</span>py
+</code></pre></div><p>此时外部怎样调用都行：</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> glance
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> glance<span class="token punctuation">.</span>api<span class="token punctuation">.</span>versions<span class="token punctuation">.</span>get_now_version<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&quot;1.0.0&quot;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> glance<span class="token punctuation">.</span>versions<span class="token punctuation">.</span>get_now_version<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&quot;1.0.0&quot;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> glance<span class="token punctuation">.</span>get_now_version<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&quot;1.0.0&quot;</span>
+</code></pre></div><p>也就是说，这里的<code>__init__.py</code>里写了<br> <code>from .api import *</code> 它的效果是含有 <code>from . import api</code> 的<br>
+当多重调用方式有重名的时候，<strong>深度优先</strong>：<br>
+如果<code>get_now_version</code>函数就叫<code>versions</code></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token keyword">import</span> glance
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> glance<span class="token punctuation">.</span>api<span class="token punctuation">.</span>versions<span class="token punctuation">.</span>versions<span class="token punctuation">(</span><span class="token punctuation">)</span>
+AttributeError<span class="token punctuation">:</span> <span class="token string">'function'</span> <span class="token builtin">object</span> has no attribute <span class="token string">'versions'</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> glance<span class="token punctuation">.</span>versions<span class="token punctuation">.</span>versions<span class="token punctuation">(</span><span class="token punctuation">)</span>
+AttributeError<span class="token punctuation">:</span> <span class="token string">'function'</span> <span class="token builtin">object</span> has no attribute <span class="token string">'versions'</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> glance<span class="token punctuation">.</span>api<span class="token punctuation">.</span>versions<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&quot;1.0.0&quot;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> glance<span class="token punctuation">.</span>versions<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token string">&quot;1.0.0&quot;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/markdown-note/py/19-多态和泛型.html" class="prev">
+        多态和泛型
+      </a></span> <span class="next"><a href="/markdown-note/py/21-加密有关模块.html">
+        加密有关模块
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/markdown-note/assets/js/app.6ad9ad44.js" defer></script><script src="/markdown-note/assets/js/8.ae913670.js" defer></script><script src="/markdown-note/assets/js/1.5bc6bece.js" defer></script><script src="/markdown-note/assets/js/62.d9c80f51.js" defer></script>
+  </body>
+</html>
